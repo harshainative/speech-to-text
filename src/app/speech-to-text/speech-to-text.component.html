@@ -1,0 +1,29 @@
+<div class="content" role="main">
+
+    <div class="row justify-content-center pt-2 pb-2">
+      <button title="Click here to start recording action" class="btn-mic w-auto" (click)="startStreamRecording()"
+        *ngIf="!isRecording" style="margin-right: 3px;">
+        <img src="assets/mic.png" />
+      </button>
+      <button title="Click here to stop recording" class="btn-stop w-auto" (click)="stopStreamingRecording()" *ngIf="isRecording"
+        style="margin-right: 3px;">
+        <img src="assets/stop.png" />
+      </button>
+    </div>
+    <!-- <audio #audioPlayer controls style="margin: 10px;"></audio> -->
+    <!-- <a *ngIf="audioURL" [href]="audioURL" download="recorded_audio.wav">Download last recorded audio</a> -->
+  </div>
+
+  <!-- <div>
+    @if (success) {
+        @for (result of response.results; track $index) {
+            @for( alt of result.alternatives; track $index) {
+                <div style="font-size: 12; font-style: italic; font-family: 'Times New Roman', Times, serif;">{{alt.transcript}}</div>
+            }
+        }
+    }
+  </div> -->
+
+  @for (item of signalRService.transcripts; track $index) {
+    <div style="font-size: 12; font-style: italic; font-family: 'Times New Roman', Times, serif;">{{item}}</div>
+  }

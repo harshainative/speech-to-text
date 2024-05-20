@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/custom-webpack": "^17.0.2",
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
@@ -18,8 +19,15 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@microsoft/signalr": "^8.0.0",
+    "browser-builtins": "^3.3.1",
+    "extendable-media-recorder": "^9.2.4",
+    "extendable-media-recorder-wav-encoder": "^7.0.111",
+    "msr": "^1.3.4",
+    "path-browserify": "^1.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "url": "^0.11.3",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
@@ -27,6 +35,7 @@
     "@angular/cli": "^17.3.7",
     "@angular/compiler-cli": "^17.3.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
